@@ -75,6 +75,7 @@ alapadatok.xml
 @ Ha a célmappában már létezik az adott fájl, felülírja azt.
 @ A program csak azokat a fájlokat másolja, amelyek szerepelnek a listában ÉS megtalálhatók a forrásmappában.
 @ A hibás vagy hiányzó fájlokról a végén a felhasználó jelentést kap.
+@ A program futtatása során megjelenő fekete, konzolos ablak figyelmen kívül hagyandó, és nem szabad a futás során bezárni!
 
 #################[Technikai részletek]#################
 
@@ -94,9 +95,9 @@ file_move
 		|- file_move
 			|- _internal
 			|- file_move.exe
-	|- file_move.py
-	|- file_move.pyw
-	|- file_move.spec
+	|- file_move.py (A program nyers kódja Python kiterjesztésben)
+	|- file_move.pyw (A program nyers kódja Python konzolos ablak nélkül futtatható kiterjesztésben)
+	|- file_move.spec (A tömörítéshez használt specifikációs fájlok)
 
 Érdemes a 'dist' mappán belül a 'file_move' mappában található 'file_move.exe' fájlt az asztalra parancsikonként elhelyezni.
 Ennek egy tetszőleges módja a következő:
